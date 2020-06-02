@@ -1,0 +1,37 @@
+.img-hover-zoom {
+  overflow: hidden; 
+}
+
+.img-hover-zoom img {
+  transition: transform .5s ease;
+}
+
+.img-hover-zoom:hover img {
+  transform: scale(1.2);
+}
+
+.login_form .input-group-text{
+	background-color: transparent; 
+	border-top: 0; 
+	border-right: 0; 
+	cursor: pointer;
+}
+
+.modal .change-password .input-group-text{
+	background-color: transparent; 
+	border-left: 0; 
+	cursor: pointer;
+}
+
+html {
+  	scroll-behavior: smooth;
+}
+
+.cursor-pointer{
+	cursor: pointer;
+}
+
+.stroke-transparent {
+    -webkit-text-stroke: 0.3px black;
+    -webkit-text-fill-color: transparent;
+}
