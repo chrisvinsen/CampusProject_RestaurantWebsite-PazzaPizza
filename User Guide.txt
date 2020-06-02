@@ -1,16 +1,21 @@
 Pazza Pizza Restaurant Website Project
 
 Tutorial menjalankan proyek dari source code:
-1. Clone atau download semua file source code dengan root folder (cms-pazzapizza) ke dalam komputer atau laptop Anda
-2. Buka Localhost server contohnya XAMPP dan jalankan MYSQL tersebut
-3. Kemudian buka localhost/phpmyadmin dan buat database dengan nama "dtb_pazzapizza"
-4. Ada 2 opsi pada saat memasukkan tabel dan data ke database ini:
+1. Clone atau download semua file source code dari github https://github.com/chrisvinsen/Laravel_Restaurant_Website-PazzaPizza ke dalam komputer atau laptop Anda
+2. Kemudian buka folder project laravel (cms-pazzapizza) tepatnya pada <path_disimpannya_folder>/Laravel_Restaurant_Website-PazzaPizza/Source Code/cms-pazzapizza, kemudian cari folder .env.example dan rubah namanya atau rename menjadi .env
+3. Kemudian buka Command Prompt (CMD) dan pindah ke directory folder laravel tersebut.
+   jadi pindah ke ke directory : <path_disimpannya_folder>/Laravel_Restaurant_Website-PazzaPizza/Source Code/cms-pazzapizza. 
+4. Kemudian pada directory laravel project (cms-pazzapizza) di CMD, ketik "composer install" untuk menginstall composer.
+5. Setelah selesai menginstall composer, kemudian pada directory laravel project (cms-pazzapizza) di CMD, ketik "php artisan key:generate" untuk re-generate key pada .env
+6. Buka Localhost server contohnya XAMPP dan jalankan MYSQL tersebut
+7. Kemudian buka localhost/phpmyadmin dan buat database dengan nama "dtb_pazzapizza"
+8. Ada 2 opsi pada saat memasukkan tabel dan data ke database ini:
    - Pertama, menggunakan syntax "php artisan migrate"
      Jadi kita harus masuk ke dalam path folder project laravel (folder cms-pazzapizza) menggunakan Command Prompt kita, kemudian ketik "php artisan migrate"
      Setelah proses migration selesai, kemudian buka folder database (diluar project laravel) dan kemudian import file bernama "Only Seeding Data.sql" ke dalam database yang sudah dibuat tadi (dtb-pazzapizza)
      "Only Seeding Data.sql" ini hanya untuk memasukkan data atau value setelah tabel dibuat, bukan untuk membuat tabel, tabel dibuat dengan cara migration tadi (php artisan migrate)
    - Kedua, menggunakan cara manual
      Jadi kita langsung saja melakukan import data/value dan tabel ke dalam database (dtb-pazzapizza), yaitu dengan cara import file bernama "dtb-pazzapizza ALL" yang berada pada folder Database (diluar project laravel) ke dalam database tersebut (dtb-pazzapizza)
-5. Setelah database dan semua tabel dan data dimasukkan ke dalam database, maka kita dapat melakukan running project laravel "Restaurant PazzaPizza" dengan cara membuka command prompt (CMD), dan masuk ke dalam path dimana folder laravel project kita disimpan (cms-pazzapizza), kemudian ketik "php artisan serve" pada CMD
-6. Buka browser Anda, dan kemudian buka localhost:8000
-7. Selesai, Website Restaurant PazzaPizza berhasil dijalankan.
+9. Setelah database dan semua tabel dan data dimasukkan ke dalam database, maka kita dapat melakukan running project laravel "Restaurant PazzaPizza" dengan cara membuka command prompt (CMD), dan masuk ke dalam path dimana folder laravel project kita disimpan (cms-pazzapizza), kemudian ketik "php artisan serve" pada CMD
+10. Buka browser Anda, dan kemudian buka localhost:8000
+11. Selesai, Website Restaurant PazzaPizza berhasil dijalankan.
