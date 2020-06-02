@@ -3,10 +3,13 @@ Pazza Pizza Restaurant Website Project
 Tutorial menjalankan proyek dari source code:
 1. Clone atau download semua file source code dari github https://github.com/chrisvinsen/Laravel_Restaurant_Website-PazzaPizza ke dalam komputer atau laptop Anda
 2. Kemudian buka folder project laravel (cms-pazzapizza) tepatnya pada <path_disimpannya_folder>/Laravel_Restaurant_Website-PazzaPizza/Source Code/cms-pazzapizza, kemudian cari folder .env.example dan rubah namanya atau rename menjadi .env
+   Jika Anda mengalami ERROR "You Must type a file name" saat mengubah .env.example menjadi .env
+   Maka Anda harus membuka file .env.example tersebut menggunakan notepad atau notepad++ atau Text Editor seperti Visual Studio Code, Sublime, dll, dan kemudian Save As dengan nama ".env" dan pada bagian Save as type, pilih All types (*.*)
 3. Kemudian buka Command Prompt (CMD) dan pindah ke directory folder laravel tersebut.
    jadi pindah ke ke directory : <path_disimpannya_folder>/Laravel_Restaurant_Website-PazzaPizza/Source Code/cms-pazzapizza. 
 4. Kemudian pada directory laravel project (cms-pazzapizza) di CMD, ketik "composer install" untuk menginstall composer.
 5. Setelah selesai menginstall composer, kemudian pada directory laravel project (cms-pazzapizza) di CMD, ketik "php artisan key:generate" untuk re-generate key pada .env
+
 6. Buka Localhost server contohnya XAMPP dan jalankan MYSQL tersebut
 7. Kemudian buka localhost/phpmyadmin dan buat database dengan nama "dtb_pazzapizza"
 8. Ada 2 opsi pada saat memasukkan tabel dan data ke database ini:
