@@ -27,8 +27,7 @@ class AdminController extends Controller {
 
             $user = ModelUser::where('id', Session::get('id'))->first();
 
-            // $current_date = date('Y-m-d H:i:s');
-            $current_date = "2020-06-28 00:00:01";
+            $current_date = date('Y-m-d H:i:s');
             $year_month = date('Y-m',strtotime($current_date));
 
             $date_start = $year_month . "-01 00:00:01";
